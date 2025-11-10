@@ -1,13 +1,19 @@
 const express = require('express');
 const path = require('path');
+const hbs = require('hbs');
 
 const app = express();
 
+// views
+app.set('views', path.join(__dirname, 'app_server', 'views'));
+app.set('view engine', 'hbs');
+
+// serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+// routes
+const travelRouter = require(path.join(__dirname, 'app_server', 'routes', 'travel.js'));
+app.use('/', travelRouter);
 
 const PORT = 3000;
 app.listen(PORT, () => {
