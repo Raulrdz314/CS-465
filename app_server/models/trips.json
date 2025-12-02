@@ -1,0 +1,34 @@
+{
+  "trips": [
+    {
+      "code": "GALE_REEF",
+      "name": "Gale Reef",
+      "length": 7,
+      "start": "2025-06-15",
+      "resort": "Gale Reef Resort",
+      "perPerson": 1200,
+      "image": "/images/reef1.jpg",
+      "description": "The amazing Gale Reef."
+    },
+    {
+      "code": "DAWSON_REEF",
+      "name": "Dawson’s Reef",
+      "length": 5,
+      "start": "2025-07-01",
+      "resort": "Dawson Reef Lodge",
+      "perPerson": 950,
+      "image": "/images/reef2.jpg",
+      "description": "Dawson's gnary Reef!"
+    },
+    {
+      "code": "CLAIRE_REEF",
+      "name": "Claire’s Reef",
+      "length": 6,
+      "start": "2025-08-10",
+      "resort": "Claire Reef Escape",
+      "perPerson": 1100,
+      "image": "/images/reef3.jpg",
+      "description": "Claire's Reef is also amazing."
+    }
+  ]
+}

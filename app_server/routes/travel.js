@@ -4,8 +4,10 @@ const express = require('express');
 const router = express.Router();
 const ctrlTravel = require('../controllers/travel');
 
-// main travel page
 router.get('/', ctrlTravel.travelList);
 router.get('/travel', ctrlTravel.travelList);
+
+//  API route
+router.get('/api/trips', ctrlTravel.tripsList);
 
 module.exports = router;
